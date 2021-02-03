@@ -1,0 +1,16 @@
+{
+  "components": [
+    {
+      "name": "hero",
+      "fields": {
+        "title": "Let us solve your critical website development challenges",
+        "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus",
+        "link": {
+          "title": "Contact with Us",
+          "url": "/contact"
+        },
+        "image": "banner-art.svg"
+      }
+    }
+  ]
+}
