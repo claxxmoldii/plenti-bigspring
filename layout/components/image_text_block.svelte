@@ -1,11 +1,23 @@
 <script>
   export let title, body, link, image;
+
+  let textPos = 1;
+  let textPosMD = 2;
+  let imagePos = 2;
+  let imagePosMD = 1;
+  if (image.position == "right") {
+    textPos = 2;
+    textPosMD = 1;
+    imgPos = 1;
+    imgPosMD = 2;
+  }
 </script>
 
 <section class="section">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
+
+      <div class="col-md-6 order-{textPos} order-md-{textPosMD}">
         <h2 class="section-title">{title}</h2>
         <p>{body}</p>
         <a  href="{link.url}" class="btn-link">
@@ -14,7 +26,7 @@
         </a>
       </div>
 
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+      <div class="col-md-6 order-{imagePos} order-md-{imagePosMD} mb-4 mb-md-0">
         <div>
           <img src="/assets/images/{image.url}" alt="{image.alt}" class="img-fluid">
         </div>
