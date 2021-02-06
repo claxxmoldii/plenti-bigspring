@@ -11,6 +11,126 @@
         },
         "image": "banner-art.svg"
       }
+    },
+    {
+      "name": "grid",
+      "fields": {
+        "title": "Something You Need To Know",
+        "items": [
+          {
+            "title": "Clean Code",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+            "icon": "ti-pulse"
+          },
+          {
+            "title": "Object Oriented",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+            "icon": "ti-package"
+          },
+          {
+            "title": "24h Service",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+            "icon": "ti-alarm-clock"
+          },
+          {
+            "title": "Value for Money",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+            "icon": "ti-credit-card"
+          },
+          {
+            "title": "Faster Response",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+            "icon": "ti-headphone-alt"
+          },
+          {
+            "title": "Cloud Support",
+            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil",
+            "icon": "ti-cloud-up"
+          }
+        ]
+      }
+    },
+    {
+      "name": "image_text_block",
+      "fields": {
+        "title": "It is the most advanced digital marketing and it company.",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "link": {
+          "title": "Check it out",
+          "url": "/"
+        },
+        "image": {
+          "position": "right",
+          "url": "service-3.png",
+          "alt": "all"
+        }
+      }
+    },
+    {
+      "name": "image_text_block",
+      "fields": {
+        "title": "It is a privately owned Information and cyber security company",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "link": {
+          "title": "Check it out",
+          "url": "/"
+        },
+        "image": {
+          "position": "right",
+          "url": "service-1.png",
+          "alt": "net income chart"
+        }
+      }
+    },
+    {
+      "name": "image_text_block",
+      "fields": {
+        "title": "It’s a team of experienced and skilled people with distributions",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "link": {
+          "title": "Check it out",
+          "url": "/"
+        },
+        "image": {
+          "position": "right",
+          "url": "service-2.png",
+          "alt": "revenue chart"
+        }
+      }
+    },
+    {
+      "name": "image_text_block",
+      "fields": {
+        "title": "A company standing different from others",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "link": {
+          "title": "Check it out",
+          "url": "/"
+        },
+        "image": {
+          "position": "right",
+          "url": "service-3.png",
+          "alt": "generic bar chart"
+        }
+      }
+    },
+    {
+      "name": "banner",
+      "fields": {
+        "title": "Experience the best workflow with us",
+        "image": "screenshot.svg"
+      }
+    },
+    {
+      "name": "cta",
+      "fields": {
+        "title": "Ready to get started?",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.",
+        "image": {
+          "title": "Contact Us",
+          "url": "contact"
+        }
+      }
     }
   ]
 }

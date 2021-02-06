@@ -1,0 +1,25 @@
+<script>
+  export let title, body, link, image;
+</script>
+
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">{title}</h2>
+        <p>{body}</p>
+        <a  href="{link.url}" class="btn-link">
+          {link.title}
+          <i class="ti-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <div>
+          <img src="/assets/images/{image.url}" alt="{image.alt}" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
