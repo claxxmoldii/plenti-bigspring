@@ -55,6 +55,7 @@
       "fields": {
         "title": "It is the most advanced digital marketing and it company.",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "background": "",
         "link": {
           "title": "Check it out",
           "url": "/"
@@ -71,6 +72,7 @@
       "fields": {
         "title": "It is a privately owned Information and cyber security company",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "background": "blue",
         "link": {
           "title": "Check it out",
           "url": "/"
@@ -87,6 +89,7 @@
       "fields": {
         "title": "It’s a team of experienced and skilled people with distributions",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "background": "",
         "link": {
           "title": "Check it out",
           "url": "/"
@@ -103,6 +106,7 @@
       "fields": {
         "title": "A company standing different from others",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat.",
+        "background": "blue",
         "link": {
           "title": "Check it out",
           "url": "/"

@@ -16,3 +16,9 @@
     </div>
   </div>
 </section>
+
+<style>
+  .banner {
+    padding: 100px 0 50px;
+  }
+</style>

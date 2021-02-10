@@ -1,5 +1,5 @@
 <script>
-  export let title, body, link, image;
+  export let title, body, link, image, background;
 
   let textPos = 1;
   let textPosMD = 2;
@@ -11,9 +11,14 @@
     imgPos = 1;
     imgPosMD = 2;
   }
+
+  let backgroundClass = "";
+  if (background == "blue") {
+    backgroundClass = " bg-light";
+  }
 </script>
 
-<section class="section">
+<section class="section{backgroundClass}">
   <div class="container">
     <div class="row align-items-center">
 
