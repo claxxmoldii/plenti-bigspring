@@ -1,7 +1,15 @@
 <script>
   import Pagination from '../components/pagination.svelte';
 
-  export let title, allContent;
+  export let title, allContent, content;
+
+  $: currentPage = content.pager;
+  let postsPerPage = 3;
+  let allPosts = allContent.filter(content => content.type == "posts");
+  let totalPosts = allPosts.length;
+  let totalPages = Math.ceil(totalPosts/postsPerPage);
+  $: postRangeHigh = currentPage * postsPerPage;
+  $: postRangeLow = postRangeHigh - postsPerPage;
 </script>
 
 <section class="section pb-0">
@@ -14,7 +22,8 @@
   <div class="container">
     <div class="row">
 
-      {#each allContent.filter(content => content.fields?.featured) as post}
+      {#each allContent.filter(content => content.fields.hasOwnProperty("featured")) as post}
+      <!-- {#each allContent.filter(content => content.fields?.featured) as post} -->
         <div class="col-12 mb-5 pb-5">
           <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
@@ -40,7 +49,8 @@
         </div>
       {/each}
 
-      {#each allContent.filter(content => content.type == "posts") as post}
+      {#each allPosts as post, i}
+        {#if i >= postRangeLow && i < postRangeHigh}
         <div class="col-lg-4 col-sm-6 mb-5">
           <div class="card border-0">
             <img  src="/assets/images/{post.fields.image.src}" 
@@ -62,10 +72,11 @@
             </div>
           </div>
         </div>
+        {/if}
       {/each}
 
       <div class="col-12">
-        <Pagination />
+        <Pagination {currentPage} {totalPages} />
       </div>
 
     </div><!-- row -->

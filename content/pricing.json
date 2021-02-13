@@ -1,0 +1,24 @@
+{
+  "title": "Pricing",
+  "plans": [
+    {
+      "title": "Basic Plan",
+      "price": "$19",
+      "bestfer": "Best For Small Individuals",
+      "benefits": ["Express Service", "Customs Clearance", "Time-Critical Services"]
+    },
+    {
+      "title": "Professional Plan",
+      "price": "$49",
+      "bestfer": "Best For Professional Dudes",
+      "benefits": ["Express Service", "Customs Clearance", "Time-Critical Services"],
+      "recommended": true
+    },
+    {
+      "title": "Gotcha Plan",
+      "price": "$99",
+      "bestfer": "Best For Inattentive Individuals",
+      "benefits": ["No-bake", "Free Rust-proofing", "Double Flier Miles"]
+    }
+  ]
+}

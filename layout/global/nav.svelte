@@ -21,7 +21,7 @@
         <a class="nav-link" href="/faq">FAQ</a>
       </li>
     </ul>
-    <a href="https://themes.gohugo.io/theme/bigspring-hugo-startup-theme/contact" class="btn btn-sm btn-primary ml-3">Get Started</a>
+    <a href="/" class="btn btn-sm btn-primary ml-3">Get Started</a>
   </div>
   <div></div>
 </nav>

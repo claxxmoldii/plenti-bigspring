@@ -14,7 +14,12 @@
       <Nav />
     </div>
   </header>
-  <svelte:component this={route} {...content.fields} {allContent} {allComponents} />
+  <svelte:component this={route} 
+    {...content.fields} 
+    {allContent} 
+    {allComponents}
+    {content}
+    />
   <Footer />
 </body>
 </html>

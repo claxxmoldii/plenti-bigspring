@@ -40,3 +40,20 @@
     </div>
   </div>
 </section>
+
+<style>
+  .btn-link {
+    color: #0aa8a7;
+    text-decoration: none;
+  }
+
+  .btn-link i {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: .2s ease;
+  }
+
+  .btn-link:active i, .btn-link:hover i, .btn-link.focus i, .btn-link.active i {
+    margin-left: 10px;
+  }
+</style>
