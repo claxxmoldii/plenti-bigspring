@@ -1,7 +1,6 @@
 <script>
-  import PricingCard from '../components/pricingCard.svelte';
 
-  export let title, plans, component, allComponents;
+  export let title, plans, recommended;
 </script>
 
 <section class="section pb-0">
@@ -14,66 +13,45 @@
   <div class="container pricing-container">
     <div class="row justify-content-center align-items-center">
 
-      {#each plans as plan}
-        <svelte:component
-          this={allComponents["layout_components_pricingCard_svelte"]}
-          {...plans}
-        />
-      {/each}
-
-      <!-- <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">Basic Plan</h3>
-            <span class="price">$49</span><span class="perMonth">/month</span>
-            <p class="lead">Best For Small Individuals</p>
-            <ul class="list-unstyled mb-5">
-              <li>Express Service</li>
-              <li>Customs Clearance</li>
-              <li>Time-Critical Services</li>
-            </ul>
-            <a href="/" class="btn btn-outline-primary">
-              Get started for free
-            </a>
+    {#each plans as plan}
+      {#if plan.recommended === false }
+        <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
+          <div class="card shadow">
+            <div class="card-body text-center py-5">
+              <h3 class="mb-4">{plan.title}</h3>
+              <span class="price">{plan.price}</span><span class="perMonth">/month</span>
+              <p class="lead">{plan.bestfer}</p>
+              <ul class="list-unstyled mb-5">
+                {#each plan.benefits as benefit}
+                  <li>{benefit}</li>
+                {/each}
+              </ul>
+              <a href="/" class="btn btn-outline-primary">
+                Get started for free
+              </a>
+            </div>
           </div>
         </div>
-      </div> -->
-
-      <!-- <div class="col-lg-4 col-recommended">
+      {:else}
+        <div class="col-lg-4 col-recommended">
         <div class="card border-0 shadow-lg">
           <div class="card-body text-center py-5">
-            <h3 class="mb-4">Professional Plan</h3>
-            <span class="price">$49</span><span class="perMonth">/month</span>
-            <p class="lead">Best For Professionals</p>
+            <h3 class="mb-4">{plan.title}</h3>
+            <span class="price">{plan.price}</span><span class="perMonth">/month</span>
+            <p class="lead">{plan.bestfer}</p>
             <ul class="list-unstyled mb-5">
-              <li>Express Service</li>
-              <li>Customs Clearance</li>
-              <li>Time-Critical Services</li>
-              <li>Cloud Service</li>
-              <li>Best Dashboard</li>
+              {#each plan.benefits as benefit}
+                <li>{benefit}</li>
+              {/each}
             </ul>
             <a href="/" class="btn btn-primary">
               Get started for free
             </a>
           </div>
         </div>
-      </div> -->
-
-      <!-- <div class="col-lg-4 mb-5 mb-lg-0 px-3 pr-3 px-lg-0">
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">Business Plan</h3>
-            <span class="price">$49</span><span class="perMonth">/month</span>
-            <p class="lead">Best For Large Individuals</p>
-            <ul class="list-unstyled mb-5">
-              <li>Express Service</li>
-              <li>Customs Clearance</li>
-              <li>Time-Critical Services</li>
-            </ul>
-            <a href="/" class="btn btn-outline-primary">Get started for free</a>
-          </div>
-        </div>
-      </div> -->
+      </div>
+      {/if}
+    {/each}
 
     </div><!-- row -->
   </div><!-- container -->
