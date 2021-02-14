@@ -4,14 +4,14 @@
     {
       "title": "Basic Plan",
       "price": "$19",
-      "bestfer": "Best For Small Individuals",
+      "bestfer": "Best For Dudes",
       "benefits": ["Express Service", "Customs Clearance", "Time-Critical Services"],
       "recommended": false
     },
     {
       "title": "Professional Plan",
       "price": "$49",
-      "bestfer": "Best For Professional Dudes",
+      "bestfer": "Best For Serious Guys",
       "benefits": [
         "Express Service", 
         "Customs Clearance", 

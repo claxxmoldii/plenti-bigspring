@@ -1,4 +1,5 @@
 <script>
+  import PricingCard from '../components/pricingCard.svelte';
 
   export let title, plans, recommended;
 </script>
@@ -18,38 +19,24 @@
         <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
           <div class="card shadow">
             <div class="card-body text-center py-5">
-              <h3 class="mb-4">{plan.title}</h3>
-              <span class="price">{plan.price}</span><span class="perMonth">/month</span>
-              <p class="lead">{plan.bestfer}</p>
-              <ul class="list-unstyled mb-5">
-                {#each plan.benefits as benefit}
-                  <li>{benefit}</li>
-                {/each}
-              </ul>
-              <a href="/" class="btn btn-outline-primary">
-                Get started for free
-              </a>
+
+              <PricingCard {...plan}/>
+
+              <a href="/" class="btn btn-outline-primary">Get started for free</a>
             </div>
           </div>
         </div>
       {:else}
         <div class="col-lg-4 col-recommended">
-        <div class="card border-0 shadow-lg">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{plan.title}</h3>
-            <span class="price">{plan.price}</span><span class="perMonth">/month</span>
-            <p class="lead">{plan.bestfer}</p>
-            <ul class="list-unstyled mb-5">
-              {#each plan.benefits as benefit}
-                <li>{benefit}</li>
-              {/each}
-            </ul>
-            <a href="/" class="btn btn-primary">
-              Get started for free
-            </a>
+          <div class="card border-0 shadow-lg">
+            <div class="card-body text-center py-5">
+
+              <PricingCard {...plan}/>
+
+              <a href="/" class="btn btn-primary">Get started for free</a>
+            </div>
           </div>
         </div>
-      </div>
       {/if}
     {/each}
 
